@@ -1,0 +1,356 @@
+body {
+
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.header {
+
+    background-color: darkblue;
+    padding: 16px;
+    color: white;
+
+}
+
+.header__logo {
+
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.section__nav {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.section__nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.section__nav li {
+    margin: 0;
+}
+
+.section__nav a {
+    display: block;
+    padding: 0.7em;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.section__nav a:hover {
+    background-color: #0056b3;
+}
+
+#content {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.home__title {
+
+    font-size: 3em;
+
+}
+
+.home__text {
+
+    font-size: 2em;
+
+}
+
+/*CSS GEORGE OHM----------------------------------------------------------------------------------------*/
+
+.section__title {
+
+    font-size: 3em;
+
+}
+
+.section__text {
+text-align: left;
+}
+
+
+.biografia_ohm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ohm-imagem {
+    width: 35%; 
+    border-radius: 10px;
+    text-align: end;
+}
+
+.primeira_lei {
+    font-size: 14pt;
+}
+
+.section__content {
+    font-size: 14pt;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align:justify;
+    width: 60%;
+}
+
+/*CSS PRIMEIRA LEI----------------------------------------------------------------------------------------*/
+
+.formula_uir {
+    font-weight: bolder;
+    font-size: 22pt;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.lista_formulas {
+    font-weight: bolder;
+    font-size: 20pt;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.circuitos_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.circuitos_box img {
+    max-width: 33.33%;
+    object-fit: contain;
+}
+
+
+.tabela {
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin: auto;
+}
+
+/*CSS Segunda Lei----------------------------------------------------------------------------------------*/
+
+.image__lei2 {
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+
+.credits__lei2 {
+
+    text-decoration: none;
+
+}
+
+/*Fluxo primeira Lei de Ohm----------------------------------------------------------------------------------------*/
+
+.fluxo__content {
+
+    display: flex;
+
+}
+
+/*Fluxo primeira Lei de Ohm----------------------------------------------------------------------------------------*/
+
+.fluxo-visual {
+    margin: 0 auto;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.barra-titulo {
+    margin: 15px 0;
+}
+
+.barra-titulo span {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.barra {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    position: relative;
+}
+
+#barra-tensao {
+    background-color: #ff6347;
+    width: 50%; 
+    transition: width 1s ease;
+}
+
+#barra-corrente {
+    background-color: #4682b4;
+    width: 30%; 
+    transition: width 1s ease;
+}
+
+#barra-resistencia {
+    background-color: #32cd32;
+    width: 70%;
+    transition: width 1s ease;
+}
+
+/* Fluxo Segunda Lei de Ohm */
+#barra-resistividade {
+    background-color: #ff6347;
+    width: 40%;
+    transition: width 1s ease;
+    animation: resistividadeAnimation 4s ease-in-out infinite;
+}
+
+#barra-comprimento {
+    background-color: #4682b4;
+    width: 60%;
+    transition: width 1s ease;
+    animation: comprimentoAnimation 4s ease-in-out infinite;
+}
+
+#barra-area {
+    background-color: #ffd700;
+    width: 80%;
+    transition: width 1s ease;
+    animation: areaAnimation 4s ease-in-out infinite;
+}
+
+#barra-resistencia2 {
+    background-color: #32cd32;
+    width: 50%;
+    transition: width 1s ease;
+    animation: resistencia2Animation 4s ease-in-out infinite;
+}
+
+@keyframes resistividadeAnimation {
+    0% { width: 40%; }
+    50% { width: 60%; }
+    100% { width: 80%; }
+}
+
+@keyframes comprimentoAnimation {
+    0% { width: 60%; }
+    50% { width: 50%; }
+    100% { width: 30%; }
+}
+
+@keyframes areaAnimation {
+    0% { width: 80%; }
+    50% { width: 60%; }
+    100% { width: 40%; }
+}
+
+@keyframes resistencia2Animation {
+    0% { width: 50%; }
+    50% { width: 70%; }
+    100% { width: 90%; }
+}
+
+@keyframes tensaoAnimation {
+    0% { width: 50%; }
+    50% { width: 80%; }
+    100% { width: 100%; }
+}
+
+@keyframes correnteAnimation {
+    0% { width: 30%; }
+    50% { width: 40%; }
+    100% { width: 60%; }
+}
+
+@keyframes resistenciaAnimation {
+    0% { width: 70%; }
+    50% { width: 50%; }
+    100% { width: 20%; }
+}
+
+#barra-tensao {
+    animation: tensaoAnimation 4s ease-in-out infinite;
+}
+
+#barra-corrente {
+    animation: correnteAnimation 4s ease-in-out infinite;
+}
+
+#barra-resistencia {
+    animation: resistenciaAnimation 4s ease-in-out infinite;
+}
+
+
+/*CSS Questões-------------------------------------------------------------------------------------------*/
+
+.questoes h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
+.questoes h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 20px;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+
+.questoes h4 {
+    color: darkblue;
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+.questao p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.questao {
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 5px solid #0056b3;
+    margin-bottom: 20px;
+}
+
+
+.resolucao p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
