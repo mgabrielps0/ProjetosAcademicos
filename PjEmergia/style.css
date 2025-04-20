@@ -1,0 +1,116 @@
+/* Reset básico */
+body {
+  margin: 0;
+  display: flex;
+  font-family: sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: #549D53;
+  width: 16%;
+  color: #92C591;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.2s ease;
+}
+
+/* Cabeçalho da sidebar */
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+/* Botão toggle ☰ */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #0A3409;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Título EMERGIA */
+.sidebar__header h1 {
+  font-size: 28px;
+  font-family: MinhaFonte, sans-serif;
+  color: #0A3409;
+  margin: 0;
+  transition: opacity 0.2s ease;
+  margin-top: 6px;
+}
+
+/* Área de links */
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar__list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.sidebar__list ul li {
+  margin-bottom: 100px;
+}
+
+.sidebar__list ul li a {
+  text-decoration: none;
+  color: #92C591;
+  font-size: 25px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar__list ul li a:hover {
+  color: #E8F3E8;
+}
+
+/* Fonte personalizada */
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('/fonteMine/Minecrafter.Reg.ttf') format('truetype');
+}
+
+/* Modo minimizado */
+.sidebar.minimized {
+  width: 60px;
+}
+
+.sidebar.minimized .sidebar__header h1,
+.sidebar.minimized .sidebar__list ul li a {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content {
+  margin-left: 16%;
+  background-color: #E7F3EF;
+  color: black;
+  padding: 20px;
+  min-height: 100vh;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* Ajustar margem ao minimizar */
+.sidebar.minimized ~ .main-content {
+  margin-left: 60px;
+}
