@@ -1,0 +1,37 @@
+<!-- Define a estrutura básica do site -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Conecta o CSS -->
+  <link rel="stylesheet" href='../style.css'>
+  <!-- Carrega o JavaScript do carrossel -->
+  <script src='./exemplos.js' defer></script>
+  <title>Exemplos Práticos</title>
+</head>
+
+<body>
+  <!-- Título da Página -->
+  <h1 class="title">Exemplos Práticos</h1>
+
+  <!-- Subtítulo explicativo -->
+  <p class="s_title">Veja abaixo alguns exemplos práticos de como a Emergência pode ser aplicada em diferentes contextos.</p>
+
+  <!-- Container do Carrossel -->
+  <div class="carousel-container">
+    <!-- Conteúdo do Carrossel (Imagem + Título + Texto) -->
+    <div class="carousel-content" id="carouselContent">
+      <img id="carouselImage" src="" alt="Exemplo">
+      <h3 id="carouselTitle"></h3>
+      <p id="carouselText"></p>
+    </div>
+
+    <!-- Botões para navegar entre os exemplos -->
+    <div class="carousel-buttons">
+      <button id="prevBtn">&#8592;</button>
+      <button id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+</body>
+</html>

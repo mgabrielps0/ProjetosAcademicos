@@ -114,3 +114,111 @@ body {
 .sidebar.minimized ~ .main-content {
   margin-left: 60px;
 }
+/*---------------------------- Exemplos praticos----------------------------------- */
+/* Container geral do carrossel: define tamanho, centraliza, estiliza fundo e bordas */
+.carousel-container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #E7F3EF;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+/* Área interna que contém a imagem e textos, com transição suave */
+.carousel-content {
+  transition: transform 0.6s ease;
+}
+
+/* Botões de navegação do carrossel: alinhamento e espaçamento */
+.carousel-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilo padrão dos botões */
+.carousel-buttons button {
+  background-color: #549D53;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Cor de fundo dos botões quando passa o mouse */
+.carousel-buttons button:hover {
+  background-color: #407c40;
+}
+
+/* Estilo da imagem do carrossel */
+.carousel-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Animações: Sair para a esquerda */
+.slide-left-out {
+  animation: slideLeftOut 0.6s forwards;
+}
+
+/* Animações: Entrar vindo da direita para o centro */
+.slide-left-in {
+  animation: slideLeftIn 0.6s forwards;
+}
+
+/* Animações: Sair para a direita */
+.slide-right-out {
+  animation: slideRightOut 0.6s forwards;
+}
+
+/* Animações: Entrar vindo da esquerda para o centro */
+.slide-right-in {
+  animation: slideRightIn 0.6s forwards;
+}
+
+/* Definições de movimentos */
+@keyframes slideLeftOut {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideLeftIn {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRightOut {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes slideRightIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Estilos de Títulos */
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.s_title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
