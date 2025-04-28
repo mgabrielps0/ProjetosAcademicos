@@ -160,11 +160,13 @@ body {
 
 /* Estilo da imagem do carrossel */
 .carousel-content img {
-  max-width: 100%;
+  width: 340px;    /* Fixar tamanho */
+  height: 200px;   /* Fixar altura */
+  
   border-radius: 10px;
-  height: auto;
   margin-bottom: 20px;
 }
+
 
 /* Animações: Sair para a esquerda */
 .slide-left-out {
