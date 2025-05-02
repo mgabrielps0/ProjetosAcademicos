@@ -224,3 +224,123 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+
+/*ESTILIZAÇÃO CONCEITO---------------------------------------------------------------------------*/
+
+.conceito__title{
+
+  text-align: center;
+  color: #4b3c2d;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 25px;
+
+}
+
+.conceito__content {
+  background-color: #fefaf6; /* bege claro */
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3b2f2f; /* marrom escuro */
+  line-height: 1.7;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.conceito__topics {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.conceito__subtitles {
+  font-size: 24px;
+  color: #4b3c2d; /* marrom médio */
+  margin-bottom: 12px;
+  border-left: 5px solid #6b4c3b; /* detalhe lateral */
+  padding-left: 12px;
+}
+
+.conceito__texts {
+  font-size: 17px;
+  color: #3b2f2f;
+  margin-bottom: 0;
+}
+
+.conceito__topics ul {
+  padding-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.conceito__topics li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3d352e; /* tom terroso escuro */
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+  .conceito__subtitles {
+    font-size: 20px;
+  }
+
+  .conceito__texts,
+  .conceito__topics li {
+    font-size: 16px;
+  }
+
+  .conceito__content {
+    padding: 40px 16px;
+  }
+}
+
+
+.voce-sabia {
+  background: #fefaf6;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #3b2f2f;
+}
+
+.voce-sabia .container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.voce-sabia .titulo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4b3c2d;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.voce-sabia .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.voce-sabia .card {
+  background-color: #e6dacf;
+  border-left: 6px solid #6b4c3b;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 18px;
+  line-height: 1.7;
+  transition: background 0.3s ease;
+}
+
+.voce-sabia .card:hover {
+  background-color: #dfd1c5;
+}
+
+.voce-sabia .destaque {
+  color: #3b7d4f;
+  font-weight: bold;
+}
