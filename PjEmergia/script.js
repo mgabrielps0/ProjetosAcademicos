@@ -32,8 +32,3 @@ function loadContent(page) {
       console.error(error);
     });
 }
-    .catch(error => {
-      content.innerHTML = "<h2>Erro ao carregar a página.</h2>";
-      console.error(error);
-    });
-}
