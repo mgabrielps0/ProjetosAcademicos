@@ -101,6 +101,12 @@ body {
 
 /* CONTEÚDO PRINCIPAL */
 .main-content {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  
+  margin: 0 auto;
   margin-left: 16%;
   background-color: #E7F3EF;
   color: black;
@@ -344,3 +350,125 @@ body {
   color: #3b7d4f;
   font-weight: bold;
 }
+
+
+/* Estilos da Proposta */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Container centralizado */
+.container_prop {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Título principal */
+.prop_titulo {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Parágrafos */
+.paragrafo {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista com espaçamento */
+.lista {
+  list-style-type: disc;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Seção da imagem */
+.imagem  {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  animation: fadeInUp 0.8s ease both;
+}
+
+.painel {
+  max-width: 45%;
+  max-height: 200%;
+  border-radius: 10px;
+}
+
+.unip {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+
+.led {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.div_container {
+  background-color: #fefaf6; /* bege claro */
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3b2f2f; /* marrom escuro */
+  line-height: 1.7;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.prop_subtitulo {
+  font-size: 24px;
+  color: #4b3c2d; /* marrom médio */
+  margin-bottom: 12px;
+  border-left: 5px solid #6b4c3b; /* detalhe lateral */
+  padding-left: 12px;
+}
+
+
+
+
+
+/* Animação de Fade In */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .paragrafo,
+  .lista {
+    font-size: 1rem;
+  }
+}
+
