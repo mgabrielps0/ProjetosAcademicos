@@ -82,6 +82,13 @@ body {
   color: #E8F3E8;
 }
 
+.sidebar-title-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
 /* Fonte personalizada */
 @font-face {
   font-family: 'MinhaFonte';
@@ -99,6 +106,19 @@ body {
   pointer-events: none;
 }
 
+
+.titulo-bv {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 20%;
+
+}
+
+
+
 /* CONTEÚDO PRINCIPAL */
 .main-content {
 
@@ -108,13 +128,32 @@ body {
   justify-content: flex-start;  
   margin: 0 auto;
   margin-left: 16%;
-  background-color: #E7F3EF;
+  background-color: #ffffff;
   color: black;
   padding: 20px;
   min-height: 100vh;
   flex: 1;
   transition: margin-left 0.3s ease;
+  /* Adicione estas linhas: */
+  font-size: 2.2rem;
+  animation: fadeInMain 1s ease;
 }
+
+/* Animação fade-in para main-content */
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
 
 /* Ajustar margem ao minimizar */
 .sidebar.minimized ~ .main-content {
