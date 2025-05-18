@@ -125,7 +125,7 @@ body {
 .carousel-container {
   width: 80%;
   margin: 40px auto;
-  background-color: #E7F3EF;
+  background-color: #fefaf6;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -222,6 +222,7 @@ body {
   margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #4b3c2d
 }
 
 .s_title {
